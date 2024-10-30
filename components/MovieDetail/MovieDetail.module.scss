@@ -1,0 +1,13 @@
+.movie-detail {
+  :global {
+    .movie-detail__image {
+      width: 20rem;
+    }
+
+    @screen md {
+      .movie-detail__content {
+        width: calc(100% - 20rem);
+      }
+    }
+  }
+}

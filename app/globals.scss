@@ -1,0 +1,52 @@
+@tailwind base;
+@layer base {
+  h1 {
+    @apply text-5xl lg:text-6xl
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  h6 {
+    @apply text-lg;
+  }
+
+  a {
+    @apply text-rose-600 hover:opacity-80;
+  }
+
+  textarea,
+  input[type="url"],
+  input[type="number"],
+  input[type="date"],
+  input[type="text"],
+  input[type="password"] {
+    @apply px-4 py-2 rounded-lg text-black w-full;
+  }
+}
+@tailwind components;
+
+@layer components {
+  .container {
+    @apply max-w-none w-auto mx-8 md:mx-16 2xl:mx-auto 2xl:max-w-8xl;
+  }
+
+  .btn {
+    @apply inline-block py-2 px-4 bg-rose-600 text-white font-semibold rounded-lg shadow-md hover:bg-rose-700;
+  }
+}
+
+@tailwind utilities;

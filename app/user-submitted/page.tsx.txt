@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+// import { UserSubmittedList } from "@/components/UserSubmittedList/UserSubmittedList";
+// import Hero from "@/components/Hero/Hero";
+// import { UserSubmittedAdd } from "@/components/UserSubmittedAdd/UserSubmittedAdd";
+
+export const metadata: Metadata = {
+  title: "User submitted",
+  description: "This is User submitted",
+};
+
+export default async function Page() {
+  return (
+    <>
+      {/* <Hero title={"User Submitted List"} />
+      <UserSubmittedAdd />
+      <UserSubmittedList /> */}
+    </>
+  );
+}

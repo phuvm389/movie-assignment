@@ -1,0 +1,14 @@
+- components
+ - use client , seo issue
+
+- revalidate
+
+- security
+
+
+
+-----------
+
+revalidate = false;
+
+revalidateTag("user-submitted-list");
