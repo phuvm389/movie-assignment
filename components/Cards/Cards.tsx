@@ -1,11 +1,11 @@
-import Link from "next/link";
-import React from "react";
-import { ICards } from "./Cards.prods";
-import CardsItem from "./CardsItem";
-import Slider from "react-slick";
+// import Link from 'next/link';
+import React from 'react';
+import { ICards } from './Cards.prods';
+import CardsItem from './CardsItem';
+import Slider from 'react-slick';
 // Import css files
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Cards = ({ title, items, link }: ICards): JSX.Element => {
   const sliderSettings = {
@@ -43,11 +43,11 @@ const Cards = ({ title, items, link }: ICards): JSX.Element => {
             ))}
           </Slider>
         )}
-        {link?.url && (
+        {/* {link?.url && (
           <Link href={link.url}>
             <a>{link.text}</a>
           </Link>
-        )}
+        )} */}
       </div>
     </div>
   );

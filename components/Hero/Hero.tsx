@@ -1,6 +1,6 @@
-import React from "react";
-import { IHero } from "./Hero.interface";
-import Image from "next/image";
+import React from 'react';
+import { IHero } from './Hero.interface';
+import Image from 'next/image';
 
 const Hero = ({ image, title }: IHero) => {
   return (
@@ -12,7 +12,7 @@ const Hero = ({ image, title }: IHero) => {
           title={image?.title}
           fill
           style={{
-            objectFit: "cover",
+            objectFit: 'cover',
           }}
         />
       ) : (
@@ -21,7 +21,7 @@ const Hero = ({ image, title }: IHero) => {
           alt="Hero background"
           fill
           style={{
-            objectFit: "cover",
+            objectFit: 'cover',
           }}
         />
       )}

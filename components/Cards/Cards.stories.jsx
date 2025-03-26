@@ -1,5 +1,3 @@
-import React from "react";
-
 import Cards from "./Cards";
 
 export default {
@@ -8,26 +6,26 @@ export default {
 };
 
 const Template = (args) => <Cards {...args} />;
-const list = [
+const items = [
   {
-    "headline": "card item 1",
-    "paragraph": "paragraph card item 1",
+    "title": "card item 1",
+    "description": "description card item 1",
   },
   {
-    "headline": "card item 2",
-    "paragraph": "paragraph card item 2",
+    "title": "card item 2",
+    "description": "description card item 2",
   },
   {
-    "headline": "card item 3",
-    "paragraph": "paragraph card item 3",
+    "title": "card item 3",
+    "description": "description card item 3",
   },
   {
-    "headline": "card item 4",
-    "paragraph": "paragraph card item 4",
+    "title": "card item 4",
+    "description": "description card item 4",
   },
   {
-    "headline": "card item 5",
-    "paragraph": "paragraph card item 5",
+    "title": "card item 5",
+    "description": "description card item 5",
   },
 ];
 const link = {
@@ -35,9 +33,17 @@ const link = {
   text: 'Read me'
 };
 
-export const CardSimple = Template.bind({});
-CardSimple.args = {
-  headline: "Card headline",
-  list: list,
-  link: link,
+// export const CardSimple = Template.bind({});
+// CardSimple.args = {
+//   title: "Card title",
+//   list: list,
+//   link: link,
+// };
+
+export const CardTest = {
+  args: {
+    title: "Card title",
+    items: items,
+    link: link,
+  },
 };

@@ -1,7 +1,7 @@
 @tailwind base;
 @layer base {
   h1 {
-    @apply text-5xl lg:text-6xl
+    @apply text-5xl lg:text-6xl;
   }
 
   h2 {
@@ -29,12 +29,16 @@
   }
 
   textarea,
-  input[type="url"],
-  input[type="number"],
-  input[type="date"],
-  input[type="text"],
-  input[type="password"] {
+  input[type='url'],
+  input[type='number'],
+  input[type='date'],
+  input[type='text'],
+  input[type='password'] {
     @apply px-4 py-2 rounded-lg text-black w-full;
+  }
+
+  body {
+    @apply bg-black text-white;
   }
 }
 @tailwind components;

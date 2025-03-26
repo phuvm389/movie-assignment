@@ -4,17 +4,17 @@ import { MovieCookieNames } from "./api/movieCookieNames";
 
 // This function can be marked `async` if using `await` inside
 export function middleware(req: NextRequest) {
-  const { pathname } = req.nextUrl;
+  // const { pathname } = req.nextUrl;
 
-  const isLogin = req.cookies.has(MovieCookieNames.MOVIE_AUTH);
+  // const isLogin = req.cookies.has(MovieCookieNames.MOVIE_AUTH);
 
-  if (!isLogin && pathname !== "/login") {
-    return NextResponse.redirect(new URL("/login", req.url));
-  }
+  // if (!isLogin && pathname !== "/login") {
+  //   return NextResponse.redirect(new URL("/login", req.url));
+  // }
 
-  if (isLogin && pathname === "/login") {
-    return NextResponse.redirect(new URL("/", req.url));
-  }
+  // if (isLogin && pathname === "/login") {
+  //   return NextResponse.redirect(new URL("/", req.url));
+  // }
 }
 
 export const config = {
