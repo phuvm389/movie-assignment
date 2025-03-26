@@ -1,5 +1,5 @@
-// import Link from 'next/link';
 import React from 'react';
+import Link from 'next/link';
 import { ICards } from './Cards.prods';
 import CardsItem from './CardsItem';
 import Slider from 'react-slick';
@@ -43,11 +43,7 @@ const Cards = ({ title, items, link }: ICards): JSX.Element => {
             ))}
           </Slider>
         )}
-        {/* {link?.url && (
-          <Link href={link.url}>
-            <a>{link.text}</a>
-          </Link>
-        )} */}
+        {link?.url && <Link href={link.url}>{link.text}</Link>}
       </div>
     </div>
   );

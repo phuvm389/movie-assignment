@@ -7,6 +7,6 @@ export default {
 
 export const HeroTest = {
   args: {
-    title: 'Phu test'
+    title: 'Hero test'
   },
 };
